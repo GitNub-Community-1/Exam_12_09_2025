@@ -1,0 +1,42 @@
+# Rider / Idea
+.idea/
+*.iml
+out/
+
+# VS / VSCode
+.vs/
+.vscode/
+
+# Build
+bin/
+obj/
+Debug/
+Release/
+publish/
+artifacts/
+
+# .NET
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# User configs
+*.user
+*.suo
+
+# Temporal
+*.log
+*.tmp
+
+# Node (если есть фронтенд внутри)
+node_modules/
+
+# Web root libs
+wwwroot/lib/
+wwwroot/dist/
