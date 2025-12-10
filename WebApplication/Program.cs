@@ -1,6 +1,8 @@
 using Infastructure.Data;
+using Infastructure.Interface;
 using Infastructure.MapperProfile;
 using Infastructure.MiddleWares;
+using Infastructure.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -19,9 +21,9 @@ builder.Services.AddSwaggerGen();
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(conf => conf.UseNpgsql(connection));
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IBookService, BookService>();
-builder.Services.AddScoped<IAuthorService, AuthorService>();
-builder.Services.AddScoped<IOrderService, OrderService>();
+//builder.Services.AddScoped<IBookService, BookService>();
+//builder.Services.AddScoped<IAuthorService, AuthorService>();
+//builder.Services.AddScoped<IOrderService, OrderService>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 

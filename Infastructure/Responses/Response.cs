@@ -21,4 +21,9 @@ public class Response<T>
         Message = message;
         Data = data;
     }
+
+    public Response()
+    {
+        
+    }
 }

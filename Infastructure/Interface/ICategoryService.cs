@@ -9,6 +9,6 @@ public interface ICategoryService
     public Task<Response<CategoryGetDto>> AddCategoryAsync(CategoryCreateDto createCategoryDto);
     public Task<Response<CategoryGetDto>> UpdateCategoryAsync(CategoryUpdateDto updateCategoryDto);
     public Task<Response<string>> DeleteCategoryAsync(int id);
-    public Task<Response<List<CategoryGetDto>>> GetCategoriesAsync(CategoryFilter categoryFilter);
-    public Task<Response<CategoryGetDto>> GetCategoryById(int id);
+    Task<Response<PagedResponse<List<CategoryGetDto>>>> GetCategoriesAsync(CategoryFilter filter);
+    public Task<Response<CategoryGetDto>> GetCategoryByIdAsync(int id);
 }
