@@ -1,29 +1,34 @@
 ﻿using AutoMapper;
+using Domain;
+using Infastructure.DTOs.CategoriDto;
+using Infastructure.DTOs.ProductDto;
+using Infastructure.DTOs.SupplierDto;
+using Infastructure.DTOs.SupplyDto;
 
 namespace Infastructure.MapperProfile;
 
 public class MapperProfile : Profile
 {
-    public MappingProfile()
+    public MapperProfile()
     {
         
-        CreateMap<Category, CategoryReadDto>();
-        CreateMap<CategoryCreateDto, Category>();
-        CreateMap<CategoryUpdateDto, Category>();
+        CreateMap<Category, CategoryGetDto>().ReverseMap();;
+        CreateMap<CategoryCreateDto, Category>().ReverseMap();;
+        CreateMap<CategoryUpdateDto, Category>().ReverseMap();;
 
         
-        CreateMap<Product, ProductReadDto>();
-        CreateMap<ProductCreateDto, Product>();
-        CreateMap<ProductUpdateDto, Product>();
+        CreateMap<Product, ProductGetDto>().ReverseMap();;
+        CreateMap<ProductCreateDto, Product>().ReverseMap();;
+        CreateMap<ProductUpdateDto, Product>().ReverseMap();;
 
         
-        CreateMap<Supplier, SupplierReadDto>();
-        CreateMap<SupplierCreateDto, Supplier>();
-        CreateMap<SupplierUpdateDto, Supplier>();
+        CreateMap<Supplier, SupplierGetDto>().ReverseMap();;
+        CreateMap<SupplierCreateDto, Supplier>().ReverseMap();;
+        CreateMap<SupplierUpdateDto, Supplier>().ReverseMap();;
 
         
-        CreateMap<Supply, SupplyReadDto>();
-        CreateMap<SupplyCreateDto, Supply>();
-        CreateMap<SupplyUpdateDto, Supply>();
+        CreateMap<Supply, SupplyGetDto>().ReverseMap();;
+        CreateMap<SupplyCreateDto, Supply>().ReverseMap();;
+        CreateMap<SupplyUpdateDto, Supply>().ReverseMap();;
     }
 }

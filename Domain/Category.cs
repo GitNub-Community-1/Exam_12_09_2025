@@ -9,5 +9,5 @@ public class Category : BaseEntity
     public string Name { get; set; }
     [MaxLength(500)]
     public string Description { get; set; }
-    public List<Product> Products { get; set; } = new();
+    public List<Product?>? Products { get; set; } = new();
 }

@@ -15,13 +15,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\ProductDto\" />
-    <Folder Include="DTOs\SupplierDto\" />
-    <Folder Include="DTOs\SupplyDto\" />
-    <Folder Include="Filters\" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

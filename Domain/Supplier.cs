@@ -12,6 +12,6 @@ public class Supplier : BaseEntity
     public string EmailAddress { get; set; }
     [Phone]
     public string PhoneNUmber { get; set; }
-    public List<Supplier> ProductSuppliers { get; set; } = new();
+    public List<ProductSupplier?>? ProductSuppliers { get; set; } = new();
 
 }
