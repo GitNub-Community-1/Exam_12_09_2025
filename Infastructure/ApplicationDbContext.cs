@@ -9,4 +9,5 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<Category> Categories { get; set; }
     public DbSet<Supply> Supply { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
+    public DbSet<ProductSupplier> ProductSuppliers { get; set; }
 }
